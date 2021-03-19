@@ -33,64 +33,90 @@
 					</li>
 				</ul>
 
-				<div class="big-title">
-					<span class="sub-title">It's a Johnny Doe</span>
-					<h1 class="title"><span>Blog</span></h1>
-				</div>
+				
 			</header>
 			<!-- .header -->
-			<div class="container">	
+		  <div class="container">	
 				<div class="blog-single blog-common row">
 					<article class="hentry post type-post col-md-10 col-md-offset-1">
 						<header class="entry-head">
-							<h2 class="title"><a href="#non" rel="bookmark">Sample Blog Post with Image</a></h2>
+							<h2 class="title"><a href="#non" rel="bookmark">Investigating the association between Socioeconomic status and No<sub>2</sub>&nbsp;</a></h2>
 							<div class="meta">
-								<p>Posted by <span class="vcard author">admin</span> in 
-									<span class="category">print</span> on 
-									<time datetime="2014-04-28" class="pub-date">28<sup>th</sup> April 2014</time>
-								</p>
+								
 							</div>
 						</header>
 
 						<!-- Entry Content -->
 						<div class="entry-content">
 							<div class="content">
-								<p class="drop-cap">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed in elit ut mauris iaculis elementum sit amet eu nulla. Sed elementum purus ut sodales consequat. Fugiat dapibus, tellus ac cursus commo do, mauris sit condime ntum nibh, uter sitse fermentum massa justo vitaes amet r quia consequuntur magni uns. Morbi leo nulla, rhoncus sed imperdiet onec vel lacus nisi. Donec vehicula tempor sodales.</p>
+								<p>It has been shown that air pollution is related to several health risks, such as stroke and aggravated respiratory disease. World Health Organization reported that 4.2 million deaths every year are caused by exposure to outdoor air pollution.According to Hajat et al. (2015), ”Most North American studies have shown that areas where low socioeconomic status (SES) communities dwell experience higher concentrations of criteria air pollutants”.</p>
 							</div>
 							<figure class="featured-image">
 								<img src="img/blog/img-2.jpg" alt="image">
 							</figure>
 							<div class="content">
-								<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. This is a <a href="#non">test link</a>. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
+								<p>The scientific interest of this project is to learn about differential levels of NO2 exposure for different population groups in Alameda County.&nbsp;We connected Aclima’s hyperlocal air quality data to neighborhood-level (block group-level) measures of demographic factors including race/ethnicity, age, income and education, employment status from American Community Survey (ACS) data, created data visualization and developed spatial and non-spatial models for statistical inference.</p>
 
-								<blockquote class="blockquote elegant-eleganticons-90">Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves. <cite>--&nbsp;Albert Einstein</cite></blockquote>
-
+								
 								<section>
-									<h4 class="head">Section Heading</h4>
-									<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Morbi leo nulla, rhoncus sed imperdiet onec vel lacus nisi. Donec vehicula tempor sodales.Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.<img src="img/blog/img-3.png" alt="image">Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <strong>Wrap text around image.</strong> Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+									<h4 class="head">DatASETS&nbsp;&nbsp;</h4>
+									<p>We used American Community Survey(ACS) data to extract Socioeconomic information by block groups(the finest level of demographics we can access). The SES information was mapped to the air pollutants data provided by Aclima, Inc. We extracted educational attainment, income, unemployment, race/ethnicity and age variables from ACS dataset. 
+										
+									</p>
 								</section>
+								<section>
+								  <h4 class="head">Exploratory Analysis&nbsp;&nbsp;</h4>
+									<p>
+										We first plotted the distribution of each demographic, and then compared them to the distribution of NO<sub>2</sub> to see whether there were similarities. 
+										
+										
+										
+									</p>
+							  </section>
+							  <section>
+								  <h4 class="head">Methodology&nbsp;&nbsp;</h4>
+									<p>
+								  	 Our primary goal is to examine the association between SES variables and NO2 air pollutant level. Linear regression models were built with log-transformed NO2 as outcome, with socio-economic related variables, income, education and employment status, adjusted for race/ethnicity and age.Correlation structure was added to the linear main model, adjusting for spatial correlation between NO2 measurements. The correlation model parameters is nuisance parameters.
+								    </p>
+								    <p>
+										Two modeling methods were used for our analysis, Generalized estimating equation (GEE) and Gaussian Bayesian spatial regression models using Nearest Neighbor Gaussian Processes (NNGP). For data less than limit of detection, we substituted them by LOD/sqrt2 based on the guidance of Environmental Protection Agency (EPA). 
+										
+									</p>
+							  </section>
+							  <section>
+							    <h4 class="head">Results&nbsp;&nbsp;</h4>
+									<p>
+										...
+										
+										
+										
+									</p>
+							  </section>
+							  <section>
+								  <h4 class="head">Conclusion&nbsp;&nbsp;</h4>
+									<p>
+									  ... 
+										
+										
+										
+									</p>
+							  </section>
+								
 							</div> <!-- .content -->
 						</div> <!-- .entry-content -->
 						<footer class="entry-meta">
 							<h4 class="head">Tagged with</h4>
-							<a href="#">animation</a> <a href="#">web-design</a> <a href="#">print</a> <a href="#">wordpress</a>
+							<a href="#">air pollutants&nbsp;</a> <a href="#">environmental injustice</a> <a href="#">spatial analysis</a> 
 						</footer>
 					</article> <!-- .hentry post-->
 					<div class="col-md-10 col-md-offset-1">
-						<div class="author-vcard">
-							<figure class="author-img col-md-2 col-sm-3">
-								<img src="img/user-pic.jpg" alt="author-pic">
-							</figure>
-							<div class="author-info col-md-10 col-sm-9">
-								<h4>Johnny Doe</h4>
-								<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Nullam dignissim convallis est. Quisque aliqua donec faucibus. Nunc iaculis suscipit dui eu volutpat enim diam.</p>
-							</div>
-						</div>
-					</div> <!-- .author-card -->
+						
+				  </div>
+		    </div> <!-- .author-card -->
 
-					<!-- Integrated disqus comment form -->
-					<div id="disqus_thread" class="comment-section col-md-10 col-md-offset-1"></div>
-				</div> <!-- .blog-single -->
+				  <!-- Integrated disqus comment form -->
+		  </div> 
+			<!-- .blog-single -->
 			</div> <!-- .container -->
 
 		</div> <!-- .blog-page -->
